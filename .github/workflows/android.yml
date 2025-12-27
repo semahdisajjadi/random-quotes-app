@@ -1,0 +1,7 @@
+name: Build Android
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Android project is ready"

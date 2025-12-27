@@ -1,37 +1,36 @@
-name: Android Build Test
-
-on:
-  push:
-    branches: [main]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    
-    steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-      
-    - name: Setup project structure
-      run: |
-        echo "Starting Android project setup..."
-        ls -la
-        echo " "
-        echo "Project structure is ready!"
-        
-    - name: Create success file
-      run: |
-        echo "CONGRATULATIONS!" > success.txt
-        echo " " >> success.txt
-        echo "Your Android project has been successfully set up on GitHub!" >> success.txt
-        echo " " >> success.txt
-        echo "Project: Random Quotes App" >> success.txt
-        echo "Package: com.example.randomquotes" >> success.txt
-        echo "Files uploaded: " >> success.txt
-        find . -name "*.kt" -o -name "*.xml" -o -name "*.gradle" >> success.txt
-        
-    - name: Upload artifacts
-      uses: actions/upload-artifact@v3
-      with:
-        name: android-success
-        path: success.txt
+name: Android Build Test 
+ 
+on: 
+"  push:" 
+"    branches: [main]" 
+ 
+jobs: 
+"  build:" 
+"    runs-on: ubuntu-latest" 
+ 
+"    steps:" 
+"    - name: Checkout code" 
+"      uses: actions/checkout@v3" 
+ 
+"    - name: Setup project structure" 
+"      run: |" 
+"        echo "Starting Android project setup..."" 
+"        ls -la" 
+"        echo " "" 
+"        echo "Project structure is ready!"" 
+ 
+"    - name: Create success file" 
+"      run: |" 
+"        echo "CONGRATULATIONS!" > success.txt" 
+"        echo " " >> success.txt" 
+"        echo "Your Android project has been successfully set up on GitHub!" >> success.txt" 
+"        echo " " >> success.txt" 
+"        echo "Project: Random Quotes App" >> success.txt" 
+"        echo "Package: com.example.randomquotes" >> success.txt" 
+"        echo "Files uploaded: " >> success.txt" 
+"        find . -name "*.kt" -o -name "*.xml" -o -name "*.gradle" >> success.txt" 
+ 
+"    - name: Upload artifacts" 
+"      uses: actions/upload-artifact@v3" 
+"      with:" 
+"        name: android-success" 
