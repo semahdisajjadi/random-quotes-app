@@ -14,14 +14,14 @@ jobs:
       
     - name: Setup project structure
       run: |
-        echo "📱 Starting Android project setup..."
+        echo "Starting Android project setup..."
         ls -la
         echo " "
-        echo "✅ Project structure is ready!"
+        echo "Project structure is ready!"
         
     - name: Create success file
       run: |
-        echo "🎉 CONGRATULATIONS!" > success.txt
+        echo "CONGRATULATIONS!" > success.txt
         echo " " >> success.txt
         echo "Your Android project has been successfully set up on GitHub!" >> success.txt
         echo " " >> success.txt
