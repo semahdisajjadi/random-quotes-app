@@ -1,0 +1,11 @@
+random-quotes-app/
+├── .github/
+│   └── workflows/
+└── app/
+    └── src/
+        └── main/
+            ├── java/com/example/randomquotes/
+            └── res/
+                ├── layout/
+                ├── values/
+                └── drawable/

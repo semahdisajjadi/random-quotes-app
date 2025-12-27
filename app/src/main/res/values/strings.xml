@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">نقل قول تصادفی</string>
+    <string name="app_title">نقل قول تصادفی</string>
+    <string name="next_quote">نقل قول بعدی</string>
+    <string name="loading_quote">در حال بارگذاری نقل قول...</string>
+    <string name="made_with">ساخته شده با ❤️ و GitHub</string>
+</resources>

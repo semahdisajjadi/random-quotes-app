@@ -1,0 +1,19 @@
+# فایل‌های تولید شده اندروید
+*.apk
+*.ap_
+*.aab
+
+# فایل‌های Gradle
+.gradle/
+build/
+
+# فایل‌های محلی
+local.properties
+
+# فایل‌های IDE
+.idea/
+*.iml
+
+# فایل‌های موقت
+.DS_Store
+Thumbs.db
